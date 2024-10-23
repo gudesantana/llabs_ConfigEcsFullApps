@@ -26,4 +26,6 @@ module "ecs" {
   fargate_memory        = var.fargate_memory
   min_capacity          = var.min_capacity
   max_capacity          = var.max_capacity
+  ip_inbound            = var.ip_inbound
+  ip_outbound           = var.ip_outbound
 }

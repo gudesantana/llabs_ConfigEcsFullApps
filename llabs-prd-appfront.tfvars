@@ -26,10 +26,12 @@ fargate_cpu          = "1024"
 fargate_memory       = "2048"
 deregistration_delay = "300"
 image_tag_mutability = "MUTABLE"
-app_image            = "816069124394.dkr.ecr.us-east-1.amazonaws.com/ecr-llabs-appfront-prd:llabs-frontapp-v18"
+app_image            = "816069124394.dkr.ecr.us-east-1.amazonaws.com/ecr-llabs-appfront-prd:llabs-frontapp-v25"
 # app_image = "nginx:latest"
 
 ###########################
 # Security Group - ALB #
 ###########################
 allow_cidr_block = ["0.0.0.0/0"]
+ip_inbound       = "0.0.0.0/0" # ingress
+ip_outbound      = "0.0.0.0/0" # egresss

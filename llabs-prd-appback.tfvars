@@ -22,15 +22,17 @@ app_count         = 1
 min_capacity      = 1
 max_capacity      = 2
 health_check_path = "/atualizar-previsao"
-# health_check_path    = "/"
+#health_check_path    = "/"
 fargate_cpu          = "256"
 fargate_memory       = "512"
 deregistration_delay = "300"
 image_tag_mutability = "MUTABLE"
-app_image            = "816069124394.dkr.ecr.us-east-1.amazonaws.com/ecr-llabs-appback-prd:llabs-backapp-v20"
-# app_image = "nginx:latest"
+app_image            = "816069124394.dkr.ecr.us-east-1.amazonaws.com/ecr-llabs-appback-prd:llabs-backapp-v26"
+#app_image = "nginx:latest"
 
 ###########################
 # Security Group - ALB #
 ###########################
 allow_cidr_block = ["0.0.0.0/0"]
+ip_inbound       = "54.198.131.34/32" # ingress
+ip_outbound      = "0.0.0.0/0"        # egress

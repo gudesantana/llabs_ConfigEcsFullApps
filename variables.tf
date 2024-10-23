@@ -134,3 +134,11 @@ variable "min_capacity" {
 variable "max_capacity" {
   type = string
 }
+
+variable "ip_inbound" {
+  type = string
+}
+
+variable "ip_outbound" {
+  type = string
+}
